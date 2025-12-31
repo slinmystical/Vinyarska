@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyarska | Семейный блог</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Шапка с навигацией -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Vinyarska</h1>
+                <p class="subtitle">Семейные рецепты и истории</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="recipes.html"><i class="fas fa-utensils"></i> Рецепты</a></li>
+                    <li><a href="stories.html"><i class="fas fa-book"></i> Истории</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> О нас</a></li>
+                    <li><a href="#" id="loginBtn"><i class="fas fa-sign-in-alt"></i> Войти</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <!-- Приветственный баннер -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Добро пожаловать в нашу семейную книгу</h2>
+                <p>Здесь хранятся самые дорогие рецепты, истории и воспоминания, которые мы собирали годами</p>
+                <a href="recipes.html" class="btn">Посмотреть рецепты</a>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-heart"></i>
+                    <p>Место для семейной фотографии</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Последние записи -->
+        <section class="latest-posts">
+            <h2><i class="fas fa-star"></i> Последние записи</h2>
+            <div class="posts-grid">
+                <article class="post-card">
+                    <div class="post-date">24 декабря 2023</div>
+                    <h3>Рождественский борщ</h3>
+                    <p>Традиционный рецепт, который готовила еще моя бабушка. Особый секрет — добавление сушеных грибов...</p>
+                    <div class="post-tags">
+                        <span class="tag">рецепт</span>
+                        <span class="tag">рождество</span>
+                        <span class="tag">семейное</span>
+                    </div>
+                    <a href="#" class="read-more">Читать дальше →</a>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-date">20 декабря 2023</div>
+                    <h3>История нашего дома</h3>
+                    <p>Как мы переехали в этот дом 30 лет назад и что изменилось с тех пор. Фотографии и воспоминания...</p>
+                    <div class="post-tags">
+                        <span class="tag">история</span>
+                        <span class="tag">семья</span>
+                    </div>
+                    <a href="#" class="read-more">Читать дальше →</a>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-date">15 декабря 2023</div>
+                    <h3>Медовое печенье</h3>
+                    <p>Идеальное новогоднее печенье, которое любит вся наша семья. Готовится быстро, съедается мгновенно!</p>
+                    <div class="post-tags">
+                        <span class="tag">рецепт</span>
+                        <span class="tag">выпечка</span>
+                        <span class="tag">новый год</span>
+                    </div>
+                    <a href="#" class="read-more">Читать дальше →</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Сезонный раздел -->
+        <section class="seasonal">
+            <h2><i class="fas fa-snowflake"></i> Новогодние традиции</h2>
+            <div class="tradition">
+                <div class="tradition-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-tree"></i>
+                        <p>Новогодний стол</p>
+                    </div>
+                </div>
+                <div class="tradition-content">
+                    <h3>Наш праздничный стол</h3>
+                    <p>Каждый год 31 декабря мы собираемся всей семьей за большим столом. Обязательные блюда:</p>
+                    <ul>
+                        <li>Холодец по бабушкиному рецепту</li>
+                        <li>Салат "Венеция" (наш семейный секрет)</li>
+                        <li>Домашние вареники с вишней</li>
+                        <li>Мандариновый пирог</li>
+                    </ul>
+                    <p>В этом разделе я буду делиться нашими новогодними традициями и рецептами.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Vinyarska</h3>
+                    <p>Семейный блог о рецептах, историях и традициях нашей семьи.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="recipes.html">Рецепты</a></li>
+                        <li><a href="stories.html">Истории</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-envelope"></i> hello@vinyarska.com</p>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Vinyarska. Все права защищены. Сделано с <i class="fas fa-heart"></i> для семьи.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно входа -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2><i class="fas fa-lock"></i> Вход в систему</h2>
+            <div class="login-options">
+                <div class="admin-login">
+                    <h3>Для семьи (админ)</h3>
+                    <p>Полный доступ к редактированию</p>
+                    <button class="btn" id="adminLoginBtn">Войти как администратор</button>
+                    <p class="hint">Подарок: доступ только для мамы</p>
+                </div>
+                <div class="guest-login">
+                    <h3>Для гостей</h3>
+                    <p>Просмотр и комментирование</p>
+                    <form id="guestLoginForm">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="email" placeholder="Email" required>
+                        <button type="submit" class="btn secondary">Войти как гость</button>
+                    </form>
+                </div>
+            </div>
+            <div class="demo-notice">
+                <p><i class="fas fa-info-circle"></i> Это демо-версия. В реальной версии будет полноценная система входа.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
